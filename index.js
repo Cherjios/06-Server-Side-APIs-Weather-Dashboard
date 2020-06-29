@@ -1,7 +1,5 @@
 var cityList =$("#city-list");
-
 var cities = [];
-console.log(cities);
 
 //Calling function init();
 init();
@@ -43,7 +41,6 @@ function renderCities() {
       li.attr("data-index", i);
       li.attr("class", "list-group-item");
       console.log(li);
-  
       cityList.append(li);
     }
   }
@@ -61,13 +58,8 @@ function renderCities() {
     }
     //Adding city-input to the city array
     cities.push(city);
-    // console.log(cities);
-    // city= "";
-    console.log(cities);
-    console.log(city);
     // Store updated cities in localStorage, re-render the list
   storeCities();
   renderCities();
-
   });
 
