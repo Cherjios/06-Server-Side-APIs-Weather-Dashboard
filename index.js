@@ -38,6 +38,7 @@ function renderCities() {
       var city = cities[i];
       
       var li = $("<li>").text(city);
+      li.attr("id","listC");
       li.attr("data-city", city);
       li.attr("class", "list-group-item");
       console.log(li);
