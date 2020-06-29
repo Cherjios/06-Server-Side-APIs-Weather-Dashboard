@@ -1,6 +1,5 @@
 # 06-Server-Side-APIs-Weather-Dashboard
- Weather Dashboard
-
+Weather Dashboard that retrieves data form another application's API.
  
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -15,7 +14,7 @@ Then open in your preferred text editor:
 - [visual studio code](https://code.visualstudio.com/) 
 
 ## Website view
-![Web screenshot](Work-Day-Scheduler.png)
+![Web screenshot](.png)
 
 
 ## Built With
