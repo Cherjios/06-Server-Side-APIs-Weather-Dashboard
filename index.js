@@ -38,7 +38,7 @@ function renderCities() {
       var city = cities[i];
       
       var li = $("<li>").text(city);
-      li.attr("data-index", i);
+      li.attr("data-index", city);
       li.attr("class", "list-group-item");
       console.log(li);
       cityList.append(li);
@@ -62,4 +62,3 @@ function renderCities() {
   storeCities();
   renderCities();
   });
-
