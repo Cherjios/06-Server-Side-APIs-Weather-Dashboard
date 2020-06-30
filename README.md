@@ -14,7 +14,7 @@ Then open in your preferred text editor:
 - [visual studio code](https://code.visualstudio.com/) 
 
 ## Website view
-![Web screenshot](.png)
+![Web screenshot](dashborad.png)
 
 
 ## Built With
