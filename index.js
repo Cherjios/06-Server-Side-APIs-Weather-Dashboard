@@ -159,7 +159,17 @@ function renderCities() {
                     var Fivedayh4 = $("<h6>").text(dayOutput);
                     //Set src to the imags
                     var imgtag = $("<img>");
+                    var skyconditions = response5day.list[i].weather[0].main;
+                    if(skyconditions==="Clouds"){
+                        imgtag.attr("src", "https://img.icons8.com/color/48/000000/light-rain-2.png/")
+                    } else if(skyconditions==="Clear"){
+                        imgtag.attr("src", "https://img.icons8.com/color/48/000000/summer.png")
+                    }else if(skyconditions==="Rain"){
+                        imgtag.attr("src", "https://img.icons8.com/color/48/000000/rain.png")
+                    }
+
                     var pTemperatureK = response5day.list[i].main.temp;
+                    console.log(skyconditions);
                     var TempetureToNum = parseInt((pTemperatureK)* 9/5 - 459);
                     var pTemperature = $("<p>").text("Tempeture: "+ TempetureToNum + " °F");
                     var pHumidity = $("<p>").text("Humidity: "+ response5day.list[i].main.humidity + " %");
@@ -168,6 +178,7 @@ function renderCities() {
                     FivedayDiv.append(pTemperature);
                     FivedayDiv.append(pHumidity);
                     $("#boxes").append(FivedayDiv);
+                    console.log(response5day);
                     j++;
                 }
             
