@@ -98,8 +98,9 @@ function renderCities() {
       url: queryURL,
       method: "GET"
     }).then(function(response) {
+        
       // Create a new table row element
-      var cityTitle = $("<h3>").text(response.name + " "+ FormatDay());
+      cityTitle = $("<h3>").text(response.name + " "+ FormatDay());
       $("#today-weather").append(cityTitle);
       var TempetureToNum = parseInt((response.main.temp)* 9/5 - 459);
       var cityTemperature = $("<p>").text("Tempeture: "+ TempetureToNum + " °F");
