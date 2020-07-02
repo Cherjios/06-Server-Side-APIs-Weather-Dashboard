@@ -122,19 +122,25 @@ function renderCities() {
             var cityUVp = $("<p>").text("UV Index: ");
             cityUVp.append(cityUV);
             $("#today-weather").append(cityUVp);
-            if(cityUV <= 2){
+            console.log(typeof responseuv.value);
+            if(responseuv.value > 0 && responseuv.value <=2){
                 cityUV.attr("class","green")
             }
-            else if (cityUV <= 7){
+            else if (responseuv.value > 2 && responseuv.value <= 5){
+                cityUV.attr("class","yellow")
+            }
+            else if (responseuv.value >5 && responseuv.value <= 7){
                 cityUV.attr("class","orange")
             }
-            else{
+            else if (responseuv.value >7 && responseuv.value <= 10){
                 cityUV.attr("class","red")
+            }
+            else{
+                cityUV.attr("class","purple")
             }
         });
     
-        //Api to get 5-day forecast
-        var cnt = 5;   
+        //Api to get 5-day forecast  
         var queryURL3 = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=" + key;
             $.ajax({
             url: queryURL3,
@@ -161,7 +167,7 @@ function renderCities() {
                     var imgtag = $("<img>");
                     var skyconditions = response5day.list[i].weather[0].main;
                     if(skyconditions==="Clouds"){
-                        imgtag.attr("src", "https://img.icons8.com/color/48/000000/light-rain-2.png/")
+                        imgtag.attr("src", "https://img.icons8.com/color/48/000000/cloud.png")
                     } else if(skyconditions==="Clear"){
                         imgtag.attr("src", "https://img.icons8.com/color/48/000000/summer.png")
                     }else if(skyconditions==="Rain"){
