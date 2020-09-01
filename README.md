@@ -28,12 +28,14 @@ Then open in your preferred text editor:
 * [Deploy a website to github](https://www.google.com/search?rlz=1C5CHFA_enUS876US878&sxsrf=ALeKk03L-krWYrY46bsiZVRE3DFHIEULGA%3A1591932240148&ei=UPXiXsrBCLW90PEPsvWSwAY&q=deploy+a+website+on+github&oq=deploy+a+website+on+github&gs_lcp=CgZwc3ktYWIQAzIECAAQQzIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoECCMQJzoFCAAQkQI6BQgAELEDOgcIABCxAxBDOgIIADoHCAAQFBCHAlDcMFjZUmDGVGgAcAB4AIABZogBoAeSAQQxMC4xmAEAoAEBqgEHZ3dzLXdpeg&sclient=psy-ab&ved=0ahUKEwjKqbjdqfvpAhW1HjQIHbK6BGgQ4dUDCAw&uact=5)
 
 
-## Authors
-
+## Contributing
 * **SERGIO LOPEZ** 
 
-- [Link to Portfolio Site](#)
+- [Link to Portfolio Site](https://cherjios.github.io/Responsive-Portfolio/)
 - [Link to Github](https://github.com/cherjios)
 - [Link to LinkedIn](https://www.linkedin.com/in/sergio-lopez-81790579)
+
+## Questions
+ sc.lopezm@gmail.com
 
 
